@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#navBar {
+    background: black;
+    height: 100px;
+}
+ul {
+    height: 60%
+}
+
+li {
+    list-style-type: none;
+    float: left;
+    color: white;
+    border-right: 1px solid grey;
+    padding: 10px;
+}
+
+li:hover {
+    background: violet;
+    transition: background 0.2s ease-in-out;
+}
+#middleCrap {
+    float: left;
+    width: 100%;
+}
+
+#middleDiv {
+    margin: 0 230px 0 230px;
+}
+
+#innerTextMiddle {
+    color: yellow;
+}
+
+#firstDiv {
+    float: left;
+    width: 230px;
+    margin-left: -100%;
+    background: red;
+}
+
+#secondDiv {
+    float: left;
+    width: 230px;
+    margin-left: -230px;
+    background: blue;
+}
+#footer {
+    clear: left;
+    background: black;
+}
