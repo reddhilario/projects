@@ -16,6 +16,7 @@ document.getElementById("addCard").addEventListener("click", ()=>{
     let placeHolder = document.getElementById("tite");
     let addCard = document.getElementById("addCard");
     //cardList.appendChild(listItem).before(addCard);
+    
     cardArray.unshift(listItem);
     addCard.parentNode.insertBefore(cardArray[0],addCard)
     
@@ -23,6 +24,18 @@ document.getElementById("addCard").addEventListener("click", ()=>{
     //console.log(cardArray)
 }); 
 
+document.getElementById("cardList").addEventListener("mouseover", (e)=>{
+    if (e.target && e.target.nodeName == "LI" && e.target.id != "addCard") {
+        console.log(""+e.target.id);
+        e.target.style.background = "grey"
+    }
+})
+document.getElementById("cardList").addEventListener("mouseout", (e)=>{
+    if (e.target && e.target.nodeName == "LI" && e.target.id != "addCard") {
+        console.log("asdasd");
+        e.target.style.background = "pink"
+    }
+})
 function printCard(){
     console.log(cardArray)
     //cardArray.shift()
