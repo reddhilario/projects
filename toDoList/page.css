@@ -58,15 +58,29 @@
     margin: 0 10px 10px 0;
     background: #8c8c8c;
     border-radius: 15px;
-    display:inline-block;
+    float: left;
+    vertical-align: top;
 }
 
-.cards {
-    height: 200px;
-    width: 200px;
-    margin: 0 10px 10px 0;
-    background: #ffa3a3;
+input[type="text"]{
+    text-overflow: ellipsis; 
+    background: transparent; 
+    border: none; 
     border-radius: 15px;
+    font-size: large;
+    width: 70%;
+    font-weight: bold;
+}
+
+#cardInputDiv{
+    clear: left;
+}
+
+#cardTag {
+    width: 100px;
+    height: 15px;
+    background: green;
+    border-radius: 25px;
 }
 
 ul {
@@ -78,4 +92,31 @@ ul {
 
 li:hover {
     background: red;
+}
+
+.alignItemsCenterVertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+}
+.alignItemsCenter{
+    display: flex;
+    align-items: center;
+}
+
+.justifyContentCenter {
+    justify-content: center;
+}
+
+.marginTop10px{
+    margin-top: 10px;
+}
+.marginTop5px{
+    margin-top: 5px;
+}
+
+.justifyContentSpaceAround{
+    display: flex;
+    justify-content: space-around;
 }
